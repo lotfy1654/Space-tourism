@@ -1,0 +1,87 @@
+.navbar-main{
+    .box{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 25px;
+        .nav-links-md{
+            background: rgb(12, 14, 24, 0.8);
+            display: flex;
+            padding: 0 50px;
+            border-radius: 5px;
+            .link{
+                padding: 15px 25px;
+                a{
+                    text-decoration: none;
+                    color: #D0D6F9 !important;
+                    &.active{
+                        color: #fff !important;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .nav-links-sm{
+            display: none;
+        }
+        @media (max-width: 768px){
+            .nav-links-md{
+                display: none;
+            }
+            .nav-links-sm{
+                display: block;
+                .open-nav{
+                    color: #fff;
+                    right: 30px;
+                    position: absolute;
+                    font-size: 35px;
+                    // z-index: -1;
+                    cursor: pointer;
+                }
+                .nav{
+                    background: rgb(115 115 115);
+                    // background: rgba(255, 255, 255 , 0.2);
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    position: fixed;
+                    right: -200px;
+                    height: 60vh;
+                    width: 180px;
+                    top: 15px;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    transition: 0.3s;
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    -ms-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    z-index: 1;
+                    .close-nav{
+                        font-size: 32px;
+                        padding: 8px;
+                        color:#fff;
+                        cursor: pointer;
+                    }
+                    .nav-links{
+                        margin: 40px 0px;
+                        .link{
+                            padding: 15px 25px;
+                            a{
+                                text-decoration: none;
+                                color: #D0D6F9 !important;
+                                &.active{
+                                    color: #fff !important;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.show-nav{
+    right: 0 !important;
+}

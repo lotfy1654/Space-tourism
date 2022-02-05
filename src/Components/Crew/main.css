@@ -1,0 +1,125 @@
+.crew-section {
+  background-image: url("../../images/crew/background-crew-desktop.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .crew-section {
+    background-image: url("../../images/crew/background-crew-tablet.jpg");
+  }
+}
+@media (max-width: 990px) {
+  .crew-section {
+    height: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .crew-section {
+    background-image: url("../../images/crew/background-crew-mobile.jpg");
+  }
+}
+.crew-section .head h3 {
+  margin: 3rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.crew-section .head h3 span {
+  color: #d0d6f9;
+}
+@media (max-width: 576px) {
+  .crew-section .head h3 {
+    margin: 3rem 0;
+  }
+}
+.crew-section .crew-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.crew-section .crew-box .crew-info {
+  width: 605px;
+}
+.crew-section .crew-box .crew-info h4 {
+  color: #d0d6f9;
+  text-transform: uppercase;
+}
+.crew-section .crew-box .crew-info h2 {
+  color: #fff;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.crew-section .crew-box .crew-info p {
+  color: #d0d6f9;
+  text-transform: capitalize;
+  padding: 10px 70px 10px 0;
+}
+@media (max-width: 990px) {
+  .crew-section .crew-box .crew-info p {
+    padding: 15px 0;
+  }
+}
+.crew-section .crew-box .crew-info .links {
+  display: flex;
+}
+.crew-section .crew-box .crew-info .links a {
+  background: #979797;
+  margin: 10px;
+  border-radius: 50%;
+}
+.crew-section .crew-box .crew-info .links a .link {
+  width: 15px;
+  height: 15px;
+}
+.crew-section .crew-box .crew-info .links a.active {
+  background: #fff;
+}
+.crew-section .crew-box .crew-img {
+  position: relative;
+  text-align: center;
+  bottom: 0;
+}
+.crew-section .crew-box .crew-img img {
+  width: 78%;
+}
+.crew-section .crew-box .crew-img img.markimg {
+  width: 86%;
+}
+.crew-section .crew-box .crew-img img.anouimg {
+  width: 95%;
+}
+@media (max-width: 1200px) {
+  .crew-section .crew-box .crew-img.anoubox {
+    bottom: -100px;
+  }
+  .crew-section .crew-box .crew-img.victorbox {
+    bottom: -60px;
+  }
+  .crew-section .crew-box .crew-img img {
+    width: 94% !important;
+  }
+}
+@media (max-width: 990px) {
+  .crew-section .crew-box {
+    flex-direction: column;
+  }
+  .crew-section .crew-box .crew-info {
+    width: 500px;
+    text-align: center;
+  }
+  .crew-section .crew-box .crew-info .links {
+    align-items: center;
+    justify-content: center;
+  }
+  .crew-section .crew-box .crew-img {
+    margin-top: 50px;
+    bottom: 0 !important;
+  }
+}
+@media (max-width: 576px) {
+  .crew-section .crew-box .crew-info {
+    width: 350px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

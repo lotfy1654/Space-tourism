@@ -1,0 +1,116 @@
+.crew-section{
+    background-image: url("../../images/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    height: 100vh;
+    @media (max-width: 768px){
+        background-image: url("../../images/crew/background-crew-tablet.jpg");
+    }
+    @media (max-width: 990px){
+        height: 100%;
+    }
+    @media (max-width: 576px){
+        background-image: url("../../images/crew/background-crew-mobile.jpg");
+    }
+    .head{
+        h3{
+            margin: 3rem;
+            color: #fff;
+            text-transform: capitalize;
+            span{
+                color: #d0d6f9;
+            }
+            @media (max-width: 576px){
+                margin: 3rem 0;
+            }
+        }
+    }
+    .crew-box{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        // position: relative;
+        // top: 100px;
+        .crew-info{
+            width: 605px;
+            h4{
+                color: #d0d6f9;
+                text-transform: uppercase;
+            }
+            h2{
+                color: #fff;
+                text-transform: uppercase;
+                margin: 2rem 0;
+            }
+            p{
+                color: #d0d6f9;
+                text-transform: capitalize;
+                padding: 10px 70px 10px 0;
+                @media (max-width: 990px){
+                    padding: 15px 0;
+                }
+            }
+            .links{
+                display: flex;
+                a{
+                    background: #979797;
+                    margin: 10px;
+                    border-radius: 50%;
+                    .link{
+                        width: 15px;
+                        height: 15px;
+                    }
+                    &.active{
+                        background: #fff;
+                        
+                    }
+                }
+            }
+        }
+        .crew-img{
+            position: relative;
+            text-align: center;
+            bottom: 0;
+            img{
+                width: 78%;
+                &.markimg{
+                    width: 86%;
+                }
+                &.anouimg{
+                    width: 95%;
+                }
+            }
+            @media (max-width: 1200px){
+                &.anoubox{
+                    bottom: -100px;
+                }
+                &.victorbox{
+                    bottom: -60px;
+                }
+                img{
+                    width: 94% !important;
+                }
+            }
+        }
+        @media (max-width: 990px){
+            flex-direction: column;
+            .crew-info{
+                width: 500px;
+                text-align: center;
+                .links{
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .crew-img{
+                margin-top: 50px;
+                bottom: 0 !important;
+            }
+        }
+        @media (max-width: 576px){
+            .crew-info{
+                width: 350px;
+            }
+        }
+    }
+}
